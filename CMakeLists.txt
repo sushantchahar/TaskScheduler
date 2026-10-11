@@ -9,3 +9,4 @@ add_library(taskscheduler STATIC src/Placeholder.cpp)
 target_include_directories(taskscheduler PUBLIC include)
 
 add_subdirectory(app)
+add_subdirectory(tests)

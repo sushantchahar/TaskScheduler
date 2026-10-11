@@ -1,0 +1,2 @@
+add_executable(taskscheduler_tests main.cpp)
+target_link_libraries(taskscheduler_tests PRIVATE taskscheduler)
