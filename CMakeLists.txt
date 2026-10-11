@@ -7,3 +7,5 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_library(taskscheduler STATIC src/Placeholder.cpp)
 target_include_directories(taskscheduler PUBLIC include)
+
+add_subdirectory(app)
