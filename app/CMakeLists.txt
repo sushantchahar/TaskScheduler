@@ -1,0 +1,2 @@
+add_executable(taskscheduler_app main.cpp)
+target_link_libraries(taskscheduler_app PRIVATE taskscheduler)
