@@ -12,7 +12,14 @@ target_compile_options(taskscheduler_warnings INTERFACE
         $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Wextra -Wpedantic>
 )
 
-add_library(taskscheduler STATIC src/Placeholder.cpp)
+add_library(taskscheduler STATIC
+        src/Job.cpp
+        include/taskscheduler/Job.h
+        include/taskscheduler/JobId.h
+        include/taskscheduler/JobState.h
+        include/taskscheduler/JobStateRules.h
+        src/JobStateRules.cpp)
+
 target_include_directories(taskscheduler PUBLIC include)
 target_link_libraries(taskscheduler PRIVATE taskscheduler_warnings)
 
