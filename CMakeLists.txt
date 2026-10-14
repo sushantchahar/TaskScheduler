@@ -24,6 +24,8 @@ add_library(taskscheduler STATIC
         include/taskscheduler/Error.h
         include/taskscheduler/ErrorCode.h
         src/ErrorFunctions.cpp
+        src/Result.cpp
+        include/taskscheduler/Result.h)
 
 target_include_directories(taskscheduler PUBLIC include)
 target_link_libraries(taskscheduler PRIVATE taskscheduler_warnings)
