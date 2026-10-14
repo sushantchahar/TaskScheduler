@@ -18,7 +18,12 @@ add_library(taskscheduler STATIC
         include/taskscheduler/JobId.h
         include/taskscheduler/JobState.h
         include/taskscheduler/JobStateRules.h
-        src/JobStateRules.cpp)
+        src/JobStateRules.cpp
+        include/taskscheduler/ErrorFunctions.h
+        src/Error.cpp
+        include/taskscheduler/Error.h
+        include/taskscheduler/ErrorCode.h
+        src/ErrorFunctions.cpp
 
 target_include_directories(taskscheduler PUBLIC include)
 target_link_libraries(taskscheduler PRIVATE taskscheduler_warnings)
